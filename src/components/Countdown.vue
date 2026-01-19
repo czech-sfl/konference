@@ -40,7 +40,7 @@ export default {
       hours: 0,
       minutes: 0,
       seconds: 0,
-      deadline: '2024-10-26T12:00:00'
+      deadline: '2026-03-14T13:00:00'
     }
   },
   created() {

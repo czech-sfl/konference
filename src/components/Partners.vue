@@ -21,38 +21,38 @@
 import {ref} from 'vue'
 
 
-const partners = ref([{
-  name: 'Magazín konopí',
-  url: 'https://magazin-konopi.cz/',
-  logo: '/konopi.svg',
-  class: ' w-60 '
-},
+const partners = ref([
   {
-    name: 'Czeched Substance',
-    url: 'https://czsub.cz/',
-    logo: '/czsub.svg',
-    class: 'h-24 w-60 mb-20 pr-4 lg:mb-0'
-
-  }, {
-    name: 'Česká psychedelická společnost',
-    url: 'https://czeps.org/',
-    logo: '/czeps.svg',
-    class: ' w-60 mb-20 lg:mb-0'
-
+    name: 'Magazín konopí',
+    url: 'https://magazin-konopi.cz/',
+    logo: '/konopi.svg',
+    class: ' w-60 '
   },
-  {
-    name: 'Rare',
-    url: 'https://www.racionalniregulace.cz/',
-    logo: '/logo_rare.png',
-    class: ' w-60 mb-20 lg:mb-0'
-  },
-
   {
     name: 'CzecHemp',
     url: 'https://www.czechemp.cz/',
     logo: '/CzecHemp.png',
     class: ' w-60 mb-20 lg:mb-0'
   },
+  // TODO: Další partneři budou doplněni
+  // {
+  //   name: 'Czeched Substance',
+  //   url: 'https://czsub.cz/',
+  //   logo: '/czsub.svg',
+  //   class: 'h-24 w-60 mb-20 pr-4 lg:mb-0'
+  // },
+  // {
+  //   name: 'Česká psychedelická společnost',
+  //   url: 'https://czeps.org/',
+  //   logo: '/czeps.svg',
+  //   class: ' w-60 mb-20 lg:mb-0'
+  // },
+  // {
+  //   name: 'Rare',
+  //   url: 'https://www.racionalniregulace.cz/',
+  //   logo: '/logo_rare.png',
+  //   class: ' w-60 mb-20 lg:mb-0'
+  // },
 ])
 
 

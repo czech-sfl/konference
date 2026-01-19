@@ -58,9 +58,11 @@
                          to="/#partners">Partneři
             </router-link>
 
+            <!-- TODO: Vstupenky budou doplněny
             <router-link @click="subNavbarHide($event.target.parentElement.parentElement.parentElement)"
                          to="/#tickets">Vstupenky
             </router-link>
+            -->
           </li>
           <!--          <li>-->
           <!--            <router-link @click="subNavbarHide($event.target.parentElement.parentElement.parentElement)" to="/#contact">-->
@@ -89,9 +91,11 @@
         <li>
           <router-link class="text-xl" to="/#partners">Partneři</router-link>
         </li>
+        <!-- TODO: Vstupenky budou doplněny
         <li>
           <router-link class="text-xl" to="/#tickets">Vstupenky</router-link>
         </li>
+        -->
 
         <!--        <li>-->
         <!--          <details v-click-outside="subNavbarHide">-->

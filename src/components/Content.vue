@@ -8,12 +8,12 @@
         <!--        <h1 class="mb-5 text-5xl font-bold text-white">INSPIRED 2 CARE</h1>-->
 <!--        <p class="text-lg xl:text-2xl text-secondary ">Konference</p>-->
         <div class=" items-center w-full my-4 ">
-          <h1 class="hidden lg:block font-burra text-4xl xl:text-9xl w-full font-bold text-secondary">Legalizujme</h1>
-          <h1 class="block lg:hidden font-burra text-6xl w-full font-bold text-secondary text-center">Legali<br>zujme
+          <h1 class="hidden lg:block font-burra text-4xl xl:text-9xl w-full font-bold text-secondary">Legalizujme II</h1>
+          <h1 class="block lg:hidden font-burra text-6xl w-full font-bold text-secondary text-center">Legali<br>zujme II
           </h1>
         </div>
-        <p class="text-lg xl:text-2xl text-secondary ">26.10.</p>
-        <p class="text-lg xl:text-2xl text-secondary ">Praha – Radlická kulturní sportovna</p>
+        <p class="text-lg xl:text-2xl text-secondary ">14.3.</p>
+        <p class="text-lg xl:text-2xl text-secondary ">Praha – Kongresové centrum, Masarykova kolej</p>
 
 
         <p class="py-6 text-white text-lg xl:text-2xl mt-5 font-bold w-full">
@@ -39,10 +39,12 @@
         <!--        </div>-->
 
 
+        <!-- TODO: Vstupenky budou doplněny
         <li>
           <router-link to="/#tickets"
                         class="btn btn-lg   mt-32  bg-gradient-to-r from-secondary to-neutral  motion-safe:animate-bounce transition-opacity  ease-in duration-700 shadow-xl border-0">Vstupenky</router-link>
         </li>
+        -->
       </div>
     </div>
   </div>
@@ -148,7 +150,9 @@
 
 
     </section>
+    <!-- TODO: Vstupenky budou doplněny
     <Tickets/>
+    -->
     <Partners/>
   </div>
 

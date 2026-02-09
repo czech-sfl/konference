@@ -1,5 +1,5 @@
 <template>
-  <div class="z-10 navbar bg-secondary text-neutral  fixed ">
+  <div class="z-50 navbar bg-secondary fixed [&_a]:text-neutral [&_a]:opacity-100 [&_a:hover]:text-primary [&_a:hover]:bg-neutral/10 [&_a]:transition-colors [&_summary]:text-neutral [&_summary]:opacity-100 [&_summary:hover]:text-primary [&_summary:hover]:bg-neutral/10 [&_summary]:transition-colors">
     <div class="navbar-start">
       <details class="dropdown">
         <summary tabindex="0" role="button"
@@ -58,12 +58,9 @@
             <NuxtLink @click="subNavbarHide($event.target.parentElement.parentElement.parentElement)"
                       to="/#partners">Partneři
             </NuxtLink>
-
-            <!-- TODO: Vstupenky budou doplněny
-            <router-link @click="subNavbarHide($event.target.parentElement.parentElement.parentElement)"
-                         to="/#tickets">Vstupenky
-            </router-link>
-            -->
+            <NuxtLink @click="subNavbarHide($event.target.parentElement.parentElement.parentElement)"
+                      to="/#tickets">Vstupenky
+            </NuxtLink>
           </li>
           <!--          <li>-->
           <!--            <router-link @click="subNavbarHide($event.target.parentElement.parentElement.parentElement)" to="/#contact">-->
@@ -93,11 +90,9 @@
         <li>
           <NuxtLink class="text-xl" to="/#partners">Partneři</NuxtLink>
         </li>
-        <!-- TODO: Vstupenky budou doplněny
         <li>
-          <router-link class="text-xl" to="/#tickets">Vstupenky</router-link>
+          <NuxtLink class="text-xl" to="/#tickets">Vstupenky</NuxtLink>
         </li>
-        -->
 
         <!--        <li>-->
         <!--          <details v-click-outside="subNavbarHide">-->

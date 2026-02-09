@@ -31,6 +31,14 @@
         <div class="mt-10 items-center self-center">
           <Countdown />
         </div>
+
+        <a
+          href="#tickets"
+          class="btn btn-lg bg-secondary text-primary border-0 hover:bg-secondary/80 font-bold font-burra text-xl mt-10 px-10"
+          @click.prevent="scrollToTickets"
+        >
+          Koupit vstupenky
+        </a>
       </div>
     </div>
   </div>
@@ -183,6 +191,10 @@ function onKeydown(e) {
   if (e.key === 'Escape') closeGallery();
   if (e.key === 'ArrowRight') nextPhoto();
   if (e.key === 'ArrowLeft') prevPhoto();
+}
+
+function scrollToTickets() {
+  document.getElementById('tickets')?.scrollIntoView({ behavior: 'smooth' });
 }
 
 onMounted(() => window.addEventListener('keydown', onKeydown));

@@ -3,26 +3,26 @@
     <div class="grid grid-flow-col gap-5 text-center auto-cols-max justify-center">
       <div class="flex flex-col rounded-box text-neutral bg-secondary p-2">
         <span class="font-bold countdown font-mono text-3xl">
-          <span v-if="days > 99">{{ Math.floor(days / 100) }}</span>
-          <span :style="'--value:' + days % 100 + ';'"></span>
+          <span :style="'--value:' + String(days).padStart(2, '0').charAt(0) + ';'"></span>
+          <span :style="'--value:' + String(days).padStart(2, '0').charAt(1) + ';'"></span>
         </span>
         dní
       </div>
       <div class="flex flex-col rounded-box text-neutral bg-secondary p-2">
         <span class="font-bold countdown font-mono text-3xl">
-          <span :style="'--value:' + hours % 100 + ';'"></span>
+          <span :style="'--value:' + String(hours).padStart(2, '0') + ';'"></span>
         </span>
         hod
       </div>
       <div class="flex flex-col rounded-box text-neutral bg-secondary p-2">
         <span class="font-bold countdown font-mono text-3xl">
-          <span :style="'--value:' + minutes % 100 + ';'"></span>
+          <span :style="'--value:' + String(minutes).padStart(2, '0') + ';'"></span>
         </span>
         min
       </div>
       <div class="flex flex-col rounded-box text-neutral bg-secondary p-2">
         <span class="font-bold countdown font-mono text-3xl">
-          <span :style="'--value:' + seconds % 100 + ';'"></span>
+          <span :style="'--value:' + String(seconds).padStart(2, '0') + ';'"></span>
         </span>
         sec
       </div>

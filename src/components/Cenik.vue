@@ -1,16 +1,15 @@
 <template>
-  <section id="tickets" class="w-full py-12 md:py-24 flex justify-center">
+  <section id="cenik" class="w-full py-12 md:py-24 flex justify-center">
     <div class="container max-w-4xl px-4">
       <div class="my-16 flex place-content-center">
         <div class="prose lg:prose-xl">
-          <h1>Vstupenky</h1>
+          <h1>Ceník vstupenek</h1>
         </div>
       </div>
 
-      <!-- Pricing table -->
       <div class="rounded-2xl border border-neutral/20 overflow-hidden">
         <!-- Header row -->
-        <div class="grid grid-cols-4 gap-0 border-b border-neutral/20 bg-neutral/10 px-4 md:px-6 py-4">
+        <div class="grid grid-cols-3 gap-0 border-b border-neutral/20 bg-neutral/10 px-4 md:px-6 py-4">
           <div class="text-primary font-bold text-base md:text-lg">Typ vstupenky</div>
           <div class="text-center">
             <div class="text-primary font-bold text-base md:text-lg">V předprodeji</div>
@@ -20,14 +19,13 @@
             <div class="text-primary font-bold text-base md:text-lg">Na místě</div>
             <div class="text-neutral text-sm font-medium">(14. 3.)</div>
           </div>
-          <div></div>
         </div>
 
         <!-- Ticket rows -->
         <div
           v-for="(ticket, i) in tickets"
           :key="i"
-          class="grid grid-cols-4 gap-0 items-center px-4 md:px-6 py-5 transition-colors hover:bg-secondary/5"
+          class="grid grid-cols-3 gap-0 items-center px-4 md:px-6 py-5 transition-colors hover:bg-secondary/5"
           :class="{ 'border-b border-neutral/10': i < tickets.length - 1 }"
         >
           <div class="flex items-center gap-3">
@@ -36,26 +34,7 @@
           </div>
           <div class="text-center text-neutral font-bold text-xl md:text-2xl">{{ ticket.presale }}</div>
           <div class="text-center text-neutral font-bold text-xl md:text-2xl">{{ ticket.onsite }}</div>
-          <div class="text-center">
-            <a
-              href="#ticket-buy"
-              class="btn btn-sm md:btn-md bg-secondary text-primary border-0 hover:bg-secondary/80 font-bold"
-              @click.prevent="scrollToBuy"
-            >Koupit</a>
-          </div>
         </div>
-      </div>
-
-      <!-- Ticket purchase iframe -->
-      <div id="ticket-buy" class="mt-16 flex flex-col items-center">
-        <iframe
-          class="smsticket-iframe rounded-xl"
-          src="https://www.smsticket.cz/api/widgets/event-sale/v2/cs/67113?eventInfo=false&utm_campaign=smsticket-prodejni-iframe"
-          frameborder="0"
-          scrolling="no"
-          allowtransparency="true"
-          style="height: 606px; width: 100%; max-width: 920px;">
-        </iframe>
       </div>
     </div>
   </section>
@@ -67,16 +46,4 @@ const tickets = [
   { icon: '🎓', name: 'Studentská vstupenka', presale: '100,-', onsite: '200,-' },
   { icon: '❤️', name: 'Vstupenka podporovatele', presale: '500,-', onsite: '500,-' }
 ];
-
-function scrollToBuy() {
-  document.getElementById('ticket-buy')?.scrollIntoView({ behavior: 'smooth' });
-}
-
-onMounted(() => {
-  const script = document.createElement('script');
-  script.src = 'https://www.smsticket.cz/static/scripts/dist/widgets/event-sale-iframe-v2/host.min.js';
-  script.type = 'text/javascript';
-  script.async = true;
-  document.body.appendChild(script);
-});
 </script>

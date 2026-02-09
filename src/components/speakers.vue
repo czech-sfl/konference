@@ -1,7 +1,7 @@
 <template>
   <section id="speakers" class="w-full max-w-6xl mx-auto py-12 md:py-24 px-4 md:px-6">
     <div class="my-16 flex place-content-center lg:mx-auto mx-5 text-justify">
-      <div class="prose lg:prose-xl text-white prose-headings:text-neutral">
+      <div class="prose lg:prose-xl text-white">
         <h1 id="team">Řečníci</h1>
       </div>
     </div>
@@ -9,7 +9,7 @@
       <div
         v-for="(speaker, index) in speakers"
         :key="index"
-        class="card w-86 shadow-xl bg-secondary text-center cursor-pointer transition transform hover:scale-105 hover:shadow-2xl"
+        class="card w-86 shadow-xl bg-secondary text-center cursor-pointer transition transform hover:scale-105 hover:shadow-2xl rounded-xl overflow-hidden"
         @click="openModal(speaker)"
       >
         <figure>

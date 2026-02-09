@@ -1,7 +1,7 @@
 <template>
   <section id="about-conference" class="w-full max-w-6xl mx-auto py-12 md:py-24 px-4 md:px-6">
     <div class="my-16 flex place-content-center lg:mx-auto mx-5 text-justify">
-      <div class="prose lg:prose-xl text-black prose-headings:text-neutral">
+      <div class="prose lg:prose-xl text-black">
         <h1 id="about">O konferenci</h1>
       </div>
     </div>

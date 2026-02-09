@@ -3,28 +3,28 @@
     <div class="navbar-start">
       <details class="dropdown">
         <summary tabindex="0" role="button"
-                 class="btn bg-transparent text-neutral lg:hidden lg:bg-secondary border-neutral">
+                 class="btn btn-ghost text-neutral lg:hidden">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"/>
           </svg>
         </summary>
         <ul class="menu menu-sm dropdown-content mt-3 z-20 p-2 shadow bg-secondary rounded-box w-52 ">
           <li>
-            <router-link @click="subNavbarHide($event.target.parentElement.parentElement.parentElement)"
-                         to="./#schedule">
+            <NuxtLink @click="subNavbarHide($event.target.parentElement.parentElement.parentElement)"
+                      to="/#schedule">
               Program
-            </router-link>
+            </NuxtLink>
           </li>
           <li>
-            <router-link @click="subNavbarHide($event.target.parentElement.parentElement.parentElement)"
-                         to="./#speakers">
+            <NuxtLink @click="subNavbarHide($event.target.parentElement.parentElement.parentElement)"
+                      to="/#speakers">
               Řečníci
-            </router-link>
+            </NuxtLink>
           </li>
           <li>
-            <router-link @click="subNavbarHide($event.target.parentElement.parentElement.parentElement)"
-                         to="/#about">O nás
-            </router-link>
+            <NuxtLink @click="subNavbarHide($event.target.parentElement.parentElement.parentElement)"
+                      to="/#about">O nás
+            </NuxtLink>
           </li>
 
           <!--          <li>-->
@@ -52,11 +52,12 @@
           <!--            </router-link>-->
           <!--          </li>-->
           <li>
-            <router-link @click="subNavbarHide($event.target.parentElement.parentElement.parentElement)"
-                         to="/#past">Minulé ročníky
-            </router-link>            <router-link @click="subNavbarHide($event.target.parentElement.parentElement.parentElement)"
-                         to="/#partners">Partneři
-            </router-link>
+            <NuxtLink @click="subNavbarHide($event.target.parentElement.parentElement.parentElement)"
+                      to="/#past">Minulé ročníky
+            </NuxtLink>
+            <NuxtLink @click="subNavbarHide($event.target.parentElement.parentElement.parentElement)"
+                      to="/#partners">Partneři
+            </NuxtLink>
 
             <!-- TODO: Vstupenky budou doplněny
             <router-link @click="subNavbarHide($event.target.parentElement.parentElement.parentElement)"
@@ -78,18 +79,19 @@
     <div class="navbar-center hidden lg:flex ">
       <ul class="menu menu-horizontal px-1">
         <li>
-          <router-link class="text-xl" to="/#schedule">Program</router-link>
+          <NuxtLink class="text-xl" to="/#schedule">Program</NuxtLink>
         </li>
         <li>
-          <router-link class="text-xl" to="/#speakers">Řečníci</router-link>
+          <NuxtLink class="text-xl" to="/#speakers">Řečníci</NuxtLink>
         </li>
         <li>
-          <router-link class="text-xl" to="/#about">O Nás</router-link>
-        </li>        <li>
-          <router-link class="text-xl" to="/#past">Minulé ročníky</router-link>
+          <NuxtLink class="text-xl" to="/#about">O Nás</NuxtLink>
         </li>
         <li>
-          <router-link class="text-xl" to="/#partners">Partneři</router-link>
+          <NuxtLink class="text-xl" to="/#past">Minulé ročníky</NuxtLink>
+        </li>
+        <li>
+          <NuxtLink class="text-xl" to="/#partners">Partneři</NuxtLink>
         </li>
         <!-- TODO: Vstupenky budou doplněny
         <li>

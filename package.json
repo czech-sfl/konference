@@ -1,24 +1,24 @@
 {
   "name": "epm2024",
-  "private": true,
   "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
   "dependencies": {
-    "daisyui": "^4.12.10",
-    "vue": "^3.5.8",
-    "vue-router": "^4.4.5"
+    "@nuxtjs/seo": "^3.4.0",
+    "daisyui": "^5.5.18",
+    "nuxt": "^4"
   },
+  "private": true,
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "type": "module",
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.15",
-    "@vitejs/plugin-vue": "^4.6.2",
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.47",
-    "tailwindcss": "^3.4.13",
-    "vite": "^5.4.8"
+    "@tailwindcss/postcss": "^4.1.18",
+    "@tailwindcss/typography": "^0.5.19",
+    "@tailwindcss/vite": "^4.1.18",
+    "tailwindcss": "^4.1.18"
   }
 }

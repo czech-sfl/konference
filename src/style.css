@@ -1,9 +1,36 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: mytheme --default;
+}
+@plugin "daisyui/theme" {
+  name: "mytheme";
+  default: true;
+  color-scheme: light;
+  --color-primary: #000000;
+  --color-secondary: #ddff89;
+  --color-accent: #06d9c4;
+  --color-neutral: #bf07f2;
+  --color-base-100: #ffffff;
+  --color-info: #73D2F2;
+  --color-success: #0D6351;
+  --color-warning: #EDC35A;
+  --color-error: #E34F58;
+  --radius-box: 1rem;
+  --radius-btn: 0.5rem;
+  --radius-field: 0.25rem;
+  --border-btn: 0;
+}
+@plugin "@tailwindcss/typography";
 
+@theme {
+  --font-burra: "Burra";
+}
 
-@layer base {
+.prose :where(h1, h2, h3, h4):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+  font-family: "Burra", sans-serif;
+  color: var(--color-neutral);
+}
+
     @font-face {
         font-family: 'Burra';
         font-weight: bold;
@@ -89,5 +116,4 @@
         font-stretch: expanded;
         src: url(/Burra-Font-Family/Burra-ThinExpanded.ttf) format("truetype");
     }
-}
 

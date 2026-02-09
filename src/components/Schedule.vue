@@ -4,7 +4,7 @@
     <div class="schedule-container">
     <div class="my-16 flex place-content-center lg:mx-auto mx-5 text-justify">
 
-      <div class="prose lg:prose-xl text-white prose-headings:text-neutral">
+      <div class="prose lg:prose-xl text-white">
       <h1 class="schedule-title">Program</h1>
       </div></div>
       <div class="schedule-grid">

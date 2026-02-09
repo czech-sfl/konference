@@ -1,13 +1,13 @@
 <template>
   <div class="mt-28 flex place-content-center lg:mx-auto mx-5 text-justify">
-    <div class="prose lg:prose-xl text-white prose-headings:text-neutral">
+    <div class="prose lg:prose-xl text-white">
       <h1 id="partners">Partneři</h1></div>
   </div>
   <div class=" px-4 mx-auto max-w-screen-xl lg:px-6">
 
     <div class="grid grid-cols-1 lg:flex gap-4 lg:gap-8 flex-auto justify-center">
       <a v-for="partner in partners" target='_blank'  :href="partner.url"
-         class="card    justify-items-center grid   ">
+         class="card rounded-xl justify-items-center grid">
         <figure><img class="object-contain  lg:mb-0
 " :class="partner.class" :src="partner.logo" :alt="partner.name"/>
         </figure>
@@ -28,12 +28,12 @@ const partners = ref([
     logo: '/konopi.svg',
     class: ' w-60 '
   },
-  {
-    name: 'CzecHemp',
-    url: 'https://www.czechemp.cz/',
-    logo: '/CzecHemp.png',
-    class: ' w-60 mb-20 lg:mb-0'
-  },
+  // {
+  //   name: 'CzecHemp',
+  //   url: 'https://www.czechemp.cz/',
+  //   logo: '/CzecHemp.png',
+  //   class: ' w-60 mb-20 lg:mb-0'
+  // },
   // TODO: Další partneři budou doplněni
   // {
   //   name: 'Czeched Substance',

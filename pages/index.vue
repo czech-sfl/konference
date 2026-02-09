@@ -1,7 +1,6 @@
 <template>
   <Navbar />
   <div class="hero min-h-screen relative overflow-hidden">
-    <div class="hero-overlay"></div>
     <video
       autoplay
       muted
@@ -11,6 +10,7 @@
     >
       <source src="/clean_video.mp4" type="video/mp4" />
     </video>
+    <div class="absolute inset-0 z-[1] video-overlay"></div>
     <div class="hero-content text-center text-neutral-content relative z-10">
       <div class="mt-10">
         <div class="items-center w-full my-4">

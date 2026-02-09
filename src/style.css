@@ -31,6 +31,10 @@
   color: var(--color-neutral);
 }
 
+.video-overlay {
+  background-color: color-mix(in oklab, var(--color-neutral) 50%, transparent);
+}
+
     @font-face {
         font-family: 'Burra';
         font-weight: bold;

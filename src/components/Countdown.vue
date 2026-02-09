@@ -3,26 +3,25 @@
     <div class="grid grid-flow-col gap-5 text-center auto-cols-max justify-center">
       <div class="flex flex-col rounded-box text-neutral bg-secondary p-2">
         <span class="font-bold countdown font-mono text-3xl">
-          <span :style="'--value:' + String(days).padStart(2, '0').charAt(0) + ';'"></span>
-          <span :style="'--value:' + String(days).padStart(2, '0').charAt(1) + ';'"></span>
+          <span :style="{ '--value': days }"></span>
         </span>
         dní
       </div>
       <div class="flex flex-col rounded-box text-neutral bg-secondary p-2">
         <span class="font-bold countdown font-mono text-3xl">
-          <span :style="'--value:' + String(hours).padStart(2, '0') + ';'"></span>
+          <span :style="{ '--value': hours }"></span>
         </span>
         hod
       </div>
       <div class="flex flex-col rounded-box text-neutral bg-secondary p-2">
         <span class="font-bold countdown font-mono text-3xl">
-          <span :style="'--value:' + String(minutes).padStart(2, '0') + ';'"></span>
+          <span :style="{ '--value': minutes }"></span>
         </span>
         min
       </div>
       <div class="flex flex-col rounded-box text-neutral bg-secondary p-2">
         <span class="font-bold countdown font-mono text-3xl">
-          <span :style="'--value:' + String(seconds).padStart(2, '0') + ';'"></span>
+          <span :style="{ '--value': seconds }"></span>
         </span>
         sec
       </div>

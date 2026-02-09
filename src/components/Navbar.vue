@@ -69,12 +69,13 @@ import { ref, watch } from 'vue';
 const menuOpen = ref(false);
 
 const links = [
+  { to: '/#about-conference', label: 'O konferenci' },
   { to: '/#schedule', label: 'Program' },
   { to: '/#speakers', label: 'Řečníci' },
-  { to: '/#about', label: 'O Nás' },
+  { to: '/#about', label: 'O nás' },
+  { to: '/#tickets', label: 'Vstupenky' },
   { to: '/#past', label: 'Minulé ročníky' },
   { to: '/#partners', label: 'Partneři' },
-  { to: '/#tickets', label: 'Vstupenky' },
 ];
 
 // Prevent body scroll when overlay is open

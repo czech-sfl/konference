@@ -7,17 +7,17 @@
         </div>
       </div>
 
-      <!-- Pricing table -->
-      <div class="rounded-2xl border border-neutral/20 overflow-hidden">
+      <!-- Pricing table – desktop -->
+      <div class="hidden md:block rounded-2xl border border-neutral/20 overflow-hidden">
         <!-- Header row -->
-        <div class="grid grid-cols-4 gap-0 border-b border-neutral/20 bg-neutral/10 px-4 md:px-6 py-4">
-          <div class="text-primary font-bold text-base md:text-lg">Typ vstupenky</div>
+        <div class="grid grid-cols-4 gap-0 border-b border-neutral/20 bg-neutral/10 px-6 py-4">
+          <div class="text-primary font-bold text-lg">Typ vstupenky</div>
           <div class="text-center">
-            <div class="text-primary font-bold text-base md:text-lg">V předprodeji</div>
+            <div class="text-primary font-bold text-lg">V předprodeji</div>
             <div class="text-neutral text-sm font-medium">(do 13. 3.)</div>
           </div>
           <div class="text-center">
-            <div class="text-primary font-bold text-base md:text-lg">Na místě</div>
+            <div class="text-primary font-bold text-lg">Na místě</div>
             <div class="text-neutral text-sm font-medium">(14. 3.)</div>
           </div>
           <div></div>
@@ -27,19 +27,50 @@
         <div
           v-for="(ticket, i) in tickets"
           :key="i"
-          class="grid grid-cols-4 gap-0 items-center px-4 md:px-6 py-5 transition-colors hover:bg-secondary/5"
+          class="grid grid-cols-4 gap-0 items-center px-6 py-5 transition-colors hover:bg-secondary/5"
           :class="{ 'border-b border-neutral/10': i < tickets.length - 1 }"
         >
           <div class="flex items-center gap-3">
             <span class="text-2xl">{{ ticket.icon }}</span>
-            <span class="text-primary font-semibold text-base md:text-lg">{{ ticket.name }}</span>
+            <span class="text-primary font-semibold text-lg">{{ ticket.name }}</span>
           </div>
-          <div class="text-center text-neutral font-bold text-xl md:text-2xl">{{ ticket.presale }}</div>
-          <div class="text-center text-neutral font-bold text-xl md:text-2xl">{{ ticket.onsite }}</div>
+          <div class="text-center text-neutral font-bold text-2xl">{{ ticket.presale }}</div>
+          <div class="text-center text-neutral font-bold text-2xl">{{ ticket.onsite }}</div>
           <div class="text-center">
             <a
               href="#ticket-buy"
-              class="btn btn-sm md:btn-md bg-secondary text-primary border-0 hover:bg-secondary/80 font-bold"
+              class="btn btn-md bg-secondary text-primary border-0 hover:bg-secondary/80 font-bold"
+              @click.prevent="scrollToBuy"
+            >Koupit</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pricing table – mobile -->
+      <div class="flex flex-col gap-4 md:hidden">
+        <div
+          v-for="(ticket, i) in tickets"
+          :key="i"
+          class="rounded-2xl border border-neutral/20 overflow-hidden transition-colors"
+        >
+          <!-- Card header -->
+          <div class="flex items-center gap-3 bg-neutral/10 px-4 py-3">
+            <span class="text-2xl">{{ ticket.icon }}</span>
+            <span class="text-primary font-bold text-lg">{{ ticket.name }}</span>
+          </div>
+          <!-- Card body -->
+          <div class="px-4 py-4 flex flex-col gap-3">
+            <div class="flex justify-between items-center">
+              <span class="text-primary text-sm font-medium">V předprodeji <span class="text-neutral/60">(do 13. 3.)</span></span>
+              <span class="text-neutral font-bold text-xl">{{ ticket.presale }}</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-primary text-sm font-medium">Na místě <span class="text-neutral/60">(14. 3.)</span></span>
+              <span class="text-neutral font-bold text-xl">{{ ticket.onsite }}</span>
+            </div>
+            <a
+              href="#ticket-buy"
+              class="btn btn-block bg-secondary text-primary border-0 hover:bg-secondary/80 font-bold mt-1"
               @click.prevent="scrollToBuy"
             >Koupit</a>
           </div>

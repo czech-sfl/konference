@@ -189,22 +189,22 @@ const galleryPhotos = [
   { src: '/konference/20211106-14_30_49-NIKON_D500.webp', alt: 'Konference 2021' },
   { src: '/konference/20231104-19_36_19-NIKON_D500.webp', alt: 'Konference 2023' },
   { src: '/konference/20221105-16_39_03-NIKON_D500.webp', alt: 'Konference 2022' },
-  { src: '/gallery/20241026-12_52_48-NIKON_D500.jpg', alt: 'Konference 2024' },
-  { src: '/gallery/20241026-13_24_11-NIKON_D500.jpg', alt: 'Konference 2024' },
-  { src: '/gallery/20241026-14_47_02-NIKON_D500.jpg', alt: 'Konference 2024' },
-  { src: '/gallery/20241026-15_54_35-NIKON_D500.jpg', alt: 'Konference 2024' },
-  { src: '/gallery/20241026-17_09_40-NIKON_D500.jpg', alt: 'Konference 2024' },
-  { src: '/gallery/ERP06432X.jpg', alt: 'Konference 2024' },
-  { src: '/gallery/ERP06433X.jpg', alt: 'Konference 2024' },
-  { src: '/gallery/ERP06438X.jpg', alt: 'Konference 2024' },
-  { src: '/gallery/ERP06493X.jpg', alt: 'Konference 2024' },
+  { src: '/gallery/20241026-12_52_48-NIKON_D500.webp', alt: 'Konference 2024' },
+  { src: '/gallery/20241026-13_24_11-NIKON_D500.webp', alt: 'Konference 2024' },
+  { src: '/gallery/20241026-14_47_02-NIKON_D500.webp', alt: 'Konference 2024' },
+  { src: '/gallery/20241026-15_54_35-NIKON_D500.webp', alt: 'Konference 2024' },
+  { src: '/gallery/20241026-17_09_40-NIKON_D500.webp', alt: 'Konference 2024' },
+  { src: '/gallery/ERP06432X.webp', alt: 'Konference 2024' },
+  { src: '/gallery/ERP06433X.webp', alt: 'Konference 2024' },
+  { src: '/gallery/ERP06438X.webp', alt: 'Konference 2024' },
+  { src: '/gallery/ERP06493X.webp', alt: 'Konference 2024' },
 ];
 
 // Venue
 const venuePhotos = [
-  { src: '/venue/022.jpg', alt: 'Kongresové centrum Masarykovy koleje' },
-  { src: '/venue/025.jpg', alt: 'Kongresové centrum Masarykovy koleje' },
-  { src: '/venue/floorplan.png', alt: 'Plánek Kongresového centra' },
+  { src: '/venue/022.webp', alt: 'Kongresové centrum Masarykovy koleje' },
+  { src: '/venue/025.webp', alt: 'Kongresové centrum Masarykovy koleje' },
+  { src: '/venue/floorplan.webp', alt: 'Plánek Kongresového centra' },
 ];
 
 // Unified lightbox

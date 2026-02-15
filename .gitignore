@@ -34,3 +34,6 @@ dist-ssr
 *.sln
 *.sw?
 package-lock.json
+
+# Source materials
+materials/

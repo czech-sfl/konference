@@ -28,23 +28,22 @@ const partners = ref([
     logo: '/konopi.svg',
     class: ' w-60 '
   },
+  {
+    name: 'Czeched Substance',
+    url: 'https://czsub.cz/',
+    logo: '/czsub.svg',
+    class: 'h-24 w-60 pr-4'
+  },
+  {
+    name: 'Česká psychedelická společnost',
+    url: 'https://czeps.org/',
+    logo: '/czeps.svg',
+    class: ' w-60 '
+  },
   // {
   //   name: 'CzecHemp',
   //   url: 'https://www.czechemp.cz/',
   //   logo: '/CzecHemp.png',
-  //   class: ' w-60 mb-20 lg:mb-0'
-  // },
-  // TODO: Další partneři budou doplněni
-  // {
-  //   name: 'Czeched Substance',
-  //   url: 'https://czsub.cz/',
-  //   logo: '/czsub.svg',
-  //   class: 'h-24 w-60 mb-20 pr-4 lg:mb-0'
-  // },
-  // {
-  //   name: 'Česká psychedelická společnost',
-  //   url: 'https://czeps.org/',
-  //   logo: '/czeps.svg',
   //   class: ' w-60 mb-20 lg:mb-0'
   // },
   // {

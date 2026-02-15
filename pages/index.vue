@@ -45,6 +45,28 @@
 
   <div>
     <AboutConference />
+
+    <section id="venue" class="w-full max-w-6xl mx-auto py-12 md:py-24 px-4 md:px-6">
+      <div class="my-16 flex place-content-center lg:mx-auto mx-5 text-justify">
+        <div class="prose lg:prose-xl text-white">
+          <h1>Místo konání</h1>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <img
+          v-for="(photo, i) in venuePhotos"
+          :key="i"
+          :src="photo.src"
+          :alt="photo.alt"
+          width="400"
+          height="300"
+          class="rounded-lg object-cover w-full h-64 md:h-80 cursor-pointer transition-transform hover:scale-105 hover:shadow-2xl"
+          style="aspect-ratio: 400 / 300; object-fit: cover;"
+          @click="openVenue(i)"
+        />
+      </div>
+    </section>
+
     <Schedule />
     <Speakers />
     <div id="about"></div>
@@ -121,36 +143,36 @@
     <Partners />
   </div>
 
-  <!-- Gallery Lightbox -->
+  <!-- Lightbox -->
   <Teleport to="body">
     <div
-      v-if="galleryOpen"
+      v-if="lightboxOpen"
       class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm"
-      @click.self="closeGallery"
+      @click.self="closeLightbox"
     >
       <button
         class="absolute top-4 right-4 text-white text-4xl font-bold hover:text-secondary z-50 cursor-pointer"
-        @click="closeGallery"
+        @click="closeLightbox"
       >&times;</button>
 
       <button
         class="absolute left-4 top-1/2 -translate-y-1/2 text-white text-5xl font-bold hover:text-secondary z-50 cursor-pointer"
-        @click.stop="prevPhoto"
+        @click.stop="prevLightbox"
       >&#8249;</button>
 
       <img
-        :src="galleryPhotos[galleryIndex].src"
-        :alt="galleryPhotos[galleryIndex].alt"
+        :src="activeLightboxPhotos[lightboxIndex].src"
+        :alt="activeLightboxPhotos[lightboxIndex].alt"
         class="max-h-[90vh] max-w-[90vw] rounded-xl object-contain shadow-2xl"
       />
 
       <button
         class="absolute right-4 top-1/2 -translate-y-1/2 text-white text-5xl font-bold hover:text-secondary z-50 cursor-pointer"
-        @click.stop="nextPhoto"
+        @click.stop="nextLightbox"
       >&#8250;</button>
 
       <div class="absolute bottom-6 text-white/70 text-sm">
-        {{ galleryIndex + 1 }} / {{ galleryPhotos.length }}
+        {{ lightboxIndex + 1 }} / {{ activeLightboxPhotos.length }}
       </div>
     </div>
   </Teleport>
@@ -166,31 +188,55 @@ const pageDescription = 'Největší konference o legalizaci a válce proti drog
 const galleryPhotos = [
   { src: '/konference/20211106-14_30_49-NIKON_D500.webp', alt: 'Konference 2021' },
   { src: '/konference/20231104-19_36_19-NIKON_D500.webp', alt: 'Konference 2023' },
-  { src: '/konference/20221105-16_39_03-NIKON_D500.webp', alt: 'Konference 2022' }
+  { src: '/konference/20221105-16_39_03-NIKON_D500.webp', alt: 'Konference 2022' },
+  { src: '/gallery/20241026-12_52_48-NIKON_D500.jpg', alt: 'Konference 2024' },
+  { src: '/gallery/20241026-13_24_11-NIKON_D500.jpg', alt: 'Konference 2024' },
+  { src: '/gallery/20241026-14_47_02-NIKON_D500.jpg', alt: 'Konference 2024' },
+  { src: '/gallery/20241026-15_54_35-NIKON_D500.jpg', alt: 'Konference 2024' },
+  { src: '/gallery/20241026-17_09_40-NIKON_D500.jpg', alt: 'Konference 2024' },
+  { src: '/gallery/ERP06432X.jpg', alt: 'Konference 2024' },
+  { src: '/gallery/ERP06433X.jpg', alt: 'Konference 2024' },
+  { src: '/gallery/ERP06438X.jpg', alt: 'Konference 2024' },
+  { src: '/gallery/ERP06493X.jpg', alt: 'Konference 2024' },
 ];
 
-const galleryOpen = ref(false);
-const galleryIndex = ref(0);
+// Venue
+const venuePhotos = [
+  { src: '/venue/022.jpg', alt: 'Kongresové centrum Masarykovy koleje' },
+  { src: '/venue/025.jpg', alt: 'Kongresové centrum Masarykovy koleje' },
+  { src: '/venue/floorplan.png', alt: 'Plánek Kongresového centra' },
+];
+
+// Unified lightbox
+const lightboxOpen = ref(false);
+const lightboxIndex = ref(0);
+const activeLightboxPhotos = ref(galleryPhotos);
 
 function openGallery(index) {
-  galleryIndex.value = index;
-  galleryOpen.value = true;
+  activeLightboxPhotos.value = galleryPhotos;
+  lightboxIndex.value = index;
+  lightboxOpen.value = true;
 }
-function closeGallery() {
-  galleryOpen.value = false;
+function openVenue(index) {
+  activeLightboxPhotos.value = venuePhotos;
+  lightboxIndex.value = index;
+  lightboxOpen.value = true;
 }
-function nextPhoto() {
-  galleryIndex.value = (galleryIndex.value + 1) % galleryPhotos.length;
+function closeLightbox() {
+  lightboxOpen.value = false;
 }
-function prevPhoto() {
-  galleryIndex.value = (galleryIndex.value - 1 + galleryPhotos.length) % galleryPhotos.length;
+function nextLightbox() {
+  lightboxIndex.value = (lightboxIndex.value + 1) % activeLightboxPhotos.value.length;
+}
+function prevLightbox() {
+  lightboxIndex.value = (lightboxIndex.value - 1 + activeLightboxPhotos.value.length) % activeLightboxPhotos.value.length;
 }
 
 function onKeydown(e) {
-  if (!galleryOpen.value) return;
-  if (e.key === 'Escape') closeGallery();
-  if (e.key === 'ArrowRight') nextPhoto();
-  if (e.key === 'ArrowLeft') prevPhoto();
+  if (!lightboxOpen.value) return;
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowRight') nextLightbox();
+  if (e.key === 'ArrowLeft') prevLightbox();
 }
 
 function scrollToTickets() {

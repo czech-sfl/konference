@@ -77,6 +77,12 @@
         </div>
       </div>
 
+      <!-- Bitcoin payment note -->
+      <div class="mt-6 rounded-xl bg-[#F7931A] px-6 py-4 flex items-center justify-center gap-3 text-white font-bold text-lg">
+        <span class="text-2xl">₿</span>
+        <span>Pro platbu Bitcoinem nás prosím <a href="https://studentsforlibertycz.cz/kontakt/" target="_blank" rel="noopener" class="underline hover:text-white/80">kontaktujte</a></span>
+      </div>
+
       <!-- Ticket purchase iframe -->
       <div id="ticket-buy" class="mt-16 flex flex-col items-center">
         <iframe

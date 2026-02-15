@@ -67,6 +67,36 @@ export default {
           organization: 'Magazín Konopí',
           description: 'Původním vzděláním historik a anglista, který již řadu let pracuje jako překladatel, novinář, editor a vydavatel magazínu Konopí se zaměřením na konopí a jeho léčebné i další využití. Je spoluzakladatelem občanské iniciativy Rodiny proti prohibici, manažerem Českého konopného klastru a registrovaným konopným pacientem. Na začátku letošního roku spoluzaložil spolek Racionální regulace, jehož cílem je prosadit racionální reformu konopné legislativy a ukončit nesmyslnou prohibici této rostliny.'
         },
+        {
+          name: 'Jan Poláček',
+          photo: '/speakers/polacek.jpg',
+          organization: 'Advokát',
+          description: 'Advokát se zaměřením na trestní právo a specializací na případy související s konopím. Ve svých komentářích upozorňuje na paradoxní situace v české legislativě: např. konstatuje, že značná část veřejnosti si mylně myslí, že pěstování konopí pro vlastní potřebu nelze trestně stíhat.'
+        },
+        {
+          name: 'Jaroslaw Kordys',
+          photo: '/speakers/kordys.jpg',
+          organization: '',
+          description: 'Polský občan, který se stal veřejně známým jako odsouzený v kauze spojené s ayahuaskou. Podle rozsudku ostravského soudu organizoval import koncentrátu tohoto nápoje z Peru a distribuoval jej na rituálech; soud mu za tento „nelegální obchod s psychotropním nápojem" v lednu 2022 uložil trest 8,5 roku vězení. V listopadu 2022 prezident Miloš Zeman Jaroslawa Kordyse a jeho manželku omilostnil, což zdůraznilo politický zájem o spravedlivé posuzování podobných případů.'
+        },
+        {
+          name: 'Martin Duřt',
+          photo: '/speakers/durt.png',
+          organization: 'Czeched Substance',
+          description: 'Výzkumník a aktivista v oblasti drogové politiky, spoluzakladatel osvětové iniciativy Czeched Substance. Dlouhodobě se věnuje harm reduction (snižování rizik) a vzdělávání veřejnosti o nových psychoaktivních látkách. Pod hlavičkou Czeched Substance realizuje terénní výzkumy a osvětové kampaně. Kromě přednášek na školách poskytuje i poradenství k užívání drog. Je také součástí České psychedelické společnosti.'
+        },
+        {
+          name: 'Pavel Kubů',
+          photo: '/speakers/kubu.jpg',
+          organization: 'ICCI / KOPAC',
+          description: 'Adiktolog a odborník na medicínskou informatiku, významný český odborník na léčebné konopí. Od roku 2006 vede Etickou komisi Národního monitorovacího centra pro drogy a drogové závislosti, je dlouhodobě činný v oboru závislostí a lékařské konopné terapie. Také spoluzaložil Mezinárodní institut pro konopí a kanabinoidy (ICCI) a působí v pacientské organizaci KOPAC (jako předseda do roku 2021). Kubů pravidelně vystupuje v médiích jako expert na terapeutické využití konopí.'
+        },
+        {
+          name: 'Tomáš Průšek',
+          photo: '/speakers/prusek.jpg',
+          organization: 'Naarden',
+          description: 'Zakladatel a spolumajitel společnosti Naarden, předního českého distributora potřeb pro pokročilé pěstování. Designer pěstíren léčebného konopí.'
+        },
         // TODO: Další řečníci budou doplněni
         // {
         //   name: 'Jindřich Vobořil',

@@ -40,18 +40,18 @@ const partners = ref([
     logo: '/czeps.svg',
     class: ' w-60 '
   },
-  // {
-  //   name: 'CzecHemp',
-  //   url: 'https://www.czechemp.cz/',
-  //   logo: '/CzecHemp.png',
-  //   class: ' w-60 mb-20 lg:mb-0'
-  // },
-  // {
-  //   name: 'Rare',
-  //   url: 'https://www.racionalniregulace.cz/',
-  //   logo: '/logo_rare.png',
-  //   class: ' w-60 mb-20 lg:mb-0'
-  // },
+  {
+    name: 'Rare',
+    url: 'https://www.racionalniregulace.cz/',
+    logo: '/logo_rare.png',
+    class: ' w-60 mb-20 lg:mb-0'
+  },
+  {
+    name: 'Rodiny proti prohibici',
+    url: 'https://rodinyprotiprohibici.cz/',
+    logo: '/logo_rodiny.png',
+    class: ' w-60 '
+  },
 ])
 
 

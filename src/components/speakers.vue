@@ -5,11 +5,11 @@
         <h1 id="team">Řečníci</h1>
       </div>
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
       <div
         v-for="(speaker, index) in speakers"
         :key="index"
-        class="card w-86 shadow-xl bg-secondary text-center cursor-pointer transition transform hover:scale-105 hover:shadow-2xl rounded-xl overflow-hidden"
+        class="card w-full max-w-sm shadow-xl bg-secondary text-center cursor-pointer transition transform hover:scale-105 hover:shadow-2xl rounded-xl overflow-hidden"
         @click="openModal(speaker)"
       >
         <figure>

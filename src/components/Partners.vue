@@ -1,7 +1,7 @@
 <template>
   <section id="partners" class="py-16 md:py-24">
     <!-- Header -->
-    <div class="mt-16 flex place-content-center lg:mx-auto mx-5 text-justify">
+    <div class="mt-16 mb-12 flex place-content-center lg:mx-auto mx-5 text-justify">
       <div class="prose lg:prose-xl text-white">
         <h1>Partneři</h1>
       </div>

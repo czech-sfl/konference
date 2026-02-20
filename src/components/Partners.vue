@@ -29,6 +29,12 @@ const partners = ref([
     class: ' w-60 '
   },
   {
+    name: 'CzecHemp',
+    url: 'https://czechemp.cz/',
+    logo: '/CzecHemp.png',
+    class: 'w-60'
+  },
+  {
     name: 'Czeched Substance',
     url: 'https://czsub.cz/',
     logo: '/czsub.svg',

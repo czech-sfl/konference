@@ -88,8 +88,8 @@ export default {
         {
           name: 'Pavel Kubů',
           photo: '/speakers/kubu.webp',
-          organization: 'ICCI / KOPAC',
-          description: 'Adiktolog a odborník na medicínskou informatiku, významný český odborník na léčebné konopí. Od roku 2006 vede Etickou komisi Národního monitorovacího centra pro drogy a drogové závislosti, je dlouhodobě činný v oboru závislostí a lékařské konopné terapie. Také spoluzaložil Mezinárodní institut pro konopí a kanabinoidy (ICCI) a působí v pacientské organizaci KOPAC (jako předseda do roku 2021). Kubů pravidelně vystupuje v médiích jako expert na terapeutické využití konopí.'
+          organization: 'KOPAC',
+          description: 'Adiktolog a odborník na medicínskou informatiku, významný český odborník na léčebné konopí. Od roku 2006 vede Etickou komisi Národního monitorovacího centra pro drogy a drogové závislosti, je dlouhodobě činný v oboru závislostí a lékařské konopné terapie. Působí v pacientské organizaci KOPAC (jako předseda do roku 2021). Kubů pravidelně vystupuje v médiích jako expert na terapeutické využití konopí.'
         },
         {
           name: 'Tomáš Prusek',

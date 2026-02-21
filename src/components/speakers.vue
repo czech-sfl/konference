@@ -63,7 +63,7 @@ export default {
       speakers: [
         {
           name: 'Lukáš Hurt',
-          photo: '/speakers/hurt.jpg',
+          photo: '/speakers/hurt.webp',
           organization: 'Magazín Konopí',
           description: 'Původním vzděláním historik a anglista, který již řadu let pracuje jako překladatel, novinář, editor a vydavatel magazínu Konopí se zaměřením na konopí a jeho léčebné i další využití. Je spoluzakladatelem občanské iniciativy Rodiny proti prohibici a zapsaného spolku Racionální regulace, jehož cílem je prosazovat reformu konopné legislativy a ukončit nesmyslnou prohibici. Spolek i občanská iniciativa v roce 2025 výraznou měrou přispěly ke schválení přelomové reformy trestního zákona a povolení pěstování tří rostlin na osobu.'
         },

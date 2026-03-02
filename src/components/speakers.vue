@@ -101,7 +101,7 @@ export default {
           name: 'Irena Fenyklová',
           photo: '/speakers/fenyklova.jpg',
           organization: 'Rodiny proti prohibici',
-          description: 'Irena Fenyklová je spoluzakladatelkou iniciativy Rodiny proti prohibici a matkou syna, který byl odsouzen na 12 let vězení za pěstování a držení konopí, aniž by mu byla prokázána distribuce. Její iniciativa sdružuje oběti represivních zákonů a nabízí jim právní pomoc a lidskou podporu. Irena pravidelně navštěvuje soudní řízení a účastní se besed, kde se snaží zvýšit povědomí o drakonických trestech spojených s protidrogovou politikou.'
+          description: 'Irena je spoluzakladatelkou iniciativy Rodiny proti prohibici a matkou syna, který byl odsouzen na 12 let vězení za pěstování a držení konopí, aniž by mu byla prokázána distribuce. Tato občanská iniciativa sdružuje oběti represivních zákonů a nabízí jim právní pomoc a lidskou podporu. Irena pravidelně navštěvuje soudní řízení a účastní se besed, kde se snaží zvýšit povědomí o drakonických trestech spojených s protidrogovou politikou.'
         },
         {
           name: 'Patrik Sieber',

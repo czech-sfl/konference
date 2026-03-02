@@ -97,6 +97,18 @@ export default {
           organization: 'Naarden',
           description: 'Zakladatel a spolumajitel společnosti Naarden, předního českého distributora potřeb pro pokročilé pěstování. Designer pěstíren léčebného konopí.'
         },
+        {
+          name: 'Irena Fenyklová',
+          photo: '/speakers/fenyklova.jpg',
+          organization: 'Rodiny proti prohibici',
+          description: 'Irena Fenyklová je spoluzakladatelkou iniciativy Rodiny proti prohibici a matkou syna, který byl odsouzen na 12 let vězení za pěstování a držení konopí, aniž by mu byla prokázána distribuce. Její iniciativa sdružuje oběti represivních zákonů a nabízí jim právní pomoc a lidskou podporu. Irena pravidelně navštěvuje soudní řízení a účastní se besed, kde se snaží zvýšit povědomí o drakonických trestech spojených s protidrogovou politikou.'
+        },
+        {
+          name: 'Patrik Sieber',
+          photo: '/speakers/sieber.jpg',
+          organization: 'Vysoká škola ekonomická v Praze',
+          description: 'Ing. Patrik Sieber, Ph.D., je český ekonom a odborník na strategii působící na Katedře strategie Fakulty podnikohospodářské Vysoké školy ekonomické v Praze (VŠE). Je jedním z autorů socioekonomických analýz, které porovnávají různé modely nakládání s konopím – od samopěstování přes konopné kluby až po regulovaný trh – a vyčíslují jejich dopady na veřejné rozpočty i společnost jako celek. Jeho studie slouží jako podklad pro vládní rozhodování a veřejnou diskusi o reformě protidrogové politiky v Česku.'
+        },
         // TODO: Další řečníci budou doplněni
         // {
         //   name: 'Jindřich Vobořil',

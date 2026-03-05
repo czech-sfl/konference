@@ -25,6 +25,11 @@ import { ref } from 'vue'
 
 const partners = ref([
   {
+    name: 'Growfest.cz',
+    url: 'https://growfest.cz/',
+    logo: '/growfest.jpg',
+  },
+  {
     name: 'Magazín konopí',
     url: 'https://magazin-konopi.cz/',
     logo: '/konopi.svg',

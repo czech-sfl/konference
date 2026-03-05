@@ -105,7 +105,7 @@ export default {
         },
         {
           name: 'Patrik Sieber',
-          photo: '/speakers/sieber.png',
+          photo: '/speakers/sieber.jpg',
           organization: 'Vysoká škola ekonomická v Praze',
           description: 'Ing. Patrik Sieber, Ph.D., je český ekonom a odborník na strategii působící na Katedře strategie Fakulty podnikohospodářské Vysoké školy ekonomické v Praze (VŠE). Je jedním z autorů socioekonomických analýz, které porovnávají různé modely nakládání s konopím – od samopěstování přes konopné kluby až po regulovaný trh – a vyčíslují jejich dopady na veřejné rozpočty i společnost jako celek. Jeho studie slouží jako podklad pro vládní rozhodování a veřejnou diskusi o reformě protidrogové politiky v Česku.'
         },

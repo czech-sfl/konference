@@ -109,9 +109,9 @@ export default {
             }
           ],
           moderator: {
-            name: 'Moderátor SFL',
-            picture: '/logo.png',
-            bio: 'Moderátor ze Students for Liberty CZ.'
+            name: 'TBA',
+            picture: '/speakers/tba.jpg',
+            bio: 'Moderátor bude oznámen.'
           }
         },
         {
@@ -146,9 +146,9 @@ export default {
             }
           ],
           moderator: {
-            name: 'Moderátor',
-            picture: '/logo.png',
-            bio: 'Moderátor panelu.'
+            name: 'TBA',
+            picture: '/speakers/tba.jpg',
+            bio: 'Moderátor bude oznámen.'
           }
         },
         {

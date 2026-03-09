@@ -88,11 +88,97 @@ export default {
     return {
       schedule: [
         {
-          time: '13:00 - 18:00',
-          title: 'Program bude upřesněn',
-          description: 'Podrobný program konference bude zveřejněn později.'
+          time: '13:00 - 14:30',
+          title: 'Panel o regulacích konopí',
+          description: 'Odborný panel zaměřený na současný stav a budoucnost regulace konopí v České republice.',
+          speakers: [
+            {
+              name: 'Tomáš Prusek',
+              picture: '/speakers/prusek.webp',
+              bio: 'Zakladatel a spolumajitel společnosti Naarden, předního českého distributora potřeb pro pokročilé pěstování. Designer pěstíren léčebného konopí.'
+            },
+            {
+              name: 'Pavel Kubů',
+              picture: '/speakers/kubu.webp',
+              bio: 'Adiktolog a odborník na medicínskou informatiku, významný český odborník na léčebné konopí. Působí v pacientské organizaci KOPAC.'
+            },
+            {
+              name: 'Patrik Sieber',
+              picture: '/speakers/sieber.jpg',
+              bio: 'Ing. Patrik Sieber, Ph.D., je český ekonom a odborník na strategii působící na VŠE Praze. Autor socioekonomických analýz modelů nakládání s konopím.'
+            }
+          ],
+          moderator: {
+            name: 'Moderátor SFL',
+            picture: '/logo.png',
+            bio: 'Moderátor ze Students for Liberty CZ.'
+          }
         },
-        // TODO: Program bude doplněn
+        {
+          time: '14:50 - 16:20',
+          title: 'Panel o obětech',
+          description: 'Příběhy lidí postižených represivní politikou a drakonickými tresty za konopí.',
+          speakers: [
+            {
+              name: 'Jan Poláček',
+              picture: '/speakers/polacek.webp',
+              bio: 'Advokát se zaměřením na trestní právo a specializací na případy související s konopím.'
+            },
+            {
+              name: 'Lukáš Hurt',
+              picture: '/speakers/hurt.jpg',
+              bio: 'Vydavatel magazínu Konopí, spoluzakladatel iniciativy Rodiny proti prohibici a spolku Racionální regulace.'
+            },
+            {
+              name: 'Irena Fenyklová',
+              picture: '/speakers/fenyklova.jpg',
+              bio: 'Spoluzakladatelka iniciativy Rodiny proti prohibici a matka syna odsouzeného na 12 let za pěstování konopí.'
+            },
+            {
+              name: 'Jaroslaw Kordys',
+              picture: '/speakers/kordys.webp',
+              bio: 'Polský občan omilostněný prezidentem Zemanem v kauze ayahuasky, odsouzený na 8,5 roku vězení.'
+            },
+            {
+              name: 'Vojtěch Třísko',
+              picture: '/speakers/trisko.jpg',
+              bio: 'Odborník na problematiku obětí represivní drogové politiky.'
+            }
+          ],
+          moderator: {
+            name: 'Moderátor',
+            picture: '/logo.png',
+            bio: 'Moderátor panelu.'
+          }
+        },
+        {
+          time: '16:20 - 17:00',
+          title: 'Coffee break',
+          description: 'Přestávka na občerstvení a networking.'
+        },
+        {
+          time: '17:00 - 18:35',
+          title: 'Panel o psychedelikách',
+          description: 'Odborný panel o výzkumu a terapeutickém využití psychedelik.',
+          speakers: [
+            {
+              name: 'Matyáš Zupko',
+              picture: '/speakers/zupko.jpg',
+              bio: 'Odborník na výzkum psychedelik.'
+            },
+            {
+              name: 'Martin Nekola',
+              picture: '/speakers/nekola.jpg',
+              bio: 'Výzkumník na FSV UK, proděkan pro digitalizaci a AI. Člen CZEPS a ČES, zabývá se drogovou politikou.'
+            }
+          ],
+          moderator: {
+            name: 'Martin Duřt',
+            picture: '/speakers/durt.webp',
+            bio: 'Výzkumník a aktivista v oblasti drogové politiky, spoluzakladatel Czeched Substance a člen České psychedelické společnosti.'
+          }
+        },
+        // TODO: Další program bude doplněn
         // {
         //   time: '12:15 - 13:00',
         //   title: 'Registrace',

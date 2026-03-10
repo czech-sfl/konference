@@ -115,6 +115,12 @@ export default {
           organization: 'FSV UK',
           description: 'Výzkumník a pedagog na Fakultě sociálních věd Univerzity Karlovy (FSV UK), kde také působí jako proděkan pro digitalizaci a AI. Dlouhodobě se zabývá drogovou politikou a problematikou metodologie sociálních věd. Člen České psychedelické společnosti (CZEPS) a České evaluační společnosti (ČES).'
         },
+        {
+          name: 'Martin Zupko',
+          photo: '/speakers/zupko.jpg',
+          organization: 'CZEPS, ČAP',
+          description: 'Martin je psycholog a terapeut, který se mimo jiné věnuje tématice party-life a harm reduction přístupu. Dlouhou dobu jste ho mohli potkat jako dobrovolníka v PsyCare nebo Hard&Smart od Podaných rukou. Pracuje jako školní psycholog, je členem CZEPS a ČAP.'
+        },
         // TODO: Další řečníci budou doplněni
         // {
         //   name: 'Jindřich Vobořil',

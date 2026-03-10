@@ -162,9 +162,9 @@ export default {
           description: 'Odborný panel o výzkumu a terapeutickém využití psychedelik.',
           speakers: [
             {
-              name: 'Matyáš Zupko',
+              name: 'Martin Zupko',
               picture: '/speakers/zupko.jpg',
-              bio: 'Odborník na výzkum psychedelik.'
+              bio: 'Martin je psycholog a terapeut, který se mimo jiné věnuje tématice party-life a harm reduction přístupu. Dlouhou dobu jste ho mohli potkat jako dobrovolníka v PsyCare nebo Hard&Smart od Podaných rukou. Pracuje jako školní psycholog, je členem CZEPS a ČAP.'
             },
             {
               name: 'Martin Nekola',

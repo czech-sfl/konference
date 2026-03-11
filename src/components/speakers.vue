@@ -121,6 +121,12 @@ export default {
           organization: 'CZEPS, ČAP',
           description: 'Martin je psycholog a terapeut, který se mimo jiné věnuje tématice party-life a harm reduction přístupu. Dlouhou dobu jste ho mohli potkat jako dobrovolníka v PsyCare nebo Hard&Smart od Podaných rukou. Pracuje jako školní psycholog, je členem CZEPS a ČAP.'
         },
+        {
+          name: 'Martin Pánek',
+          photo: '/speakers/panek.jpg',
+          organization: 'Institut liberálních studií',
+          description: 'Martin Pánek je ředitelem Institutu liberálních studií, nejstaršího českého think-tanku se sídlem v Praze. Šest let působil v Evropském parlamentu jako asistent českých a britských europoslanců, kde prosazoval volný obchod, decentralizaci, otevřené hranice a libertariánské myšlenky obecně.'
+        },
         // TODO: Další řečníci budou doplněni
         // {
         //   name: 'Jindřich Vobořil',

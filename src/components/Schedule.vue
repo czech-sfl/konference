@@ -109,9 +109,9 @@ export default {
             }
           ],
           moderator: {
-            name: 'TBA',
+            name: 'Martin Pánek',
             picture: '/speakers/tba.jpg',
-            bio: 'Moderátor bude oznámen.'
+            bio: 'Martin Pánek je ředitelem Institutu liberálních studií, nejstaršího českého think-tanku se sídlem v Praze. Šest let působil v Evropském parlamentu jako asistent českých a britských europoslanců, kde prosazoval volný obchod, decentralizaci, otevřené hranice a libertariánské myšlenky obecně.'
           }
         },
         {

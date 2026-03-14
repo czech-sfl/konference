@@ -138,17 +138,13 @@ export default {
               name: 'Jaroslaw Kordys',
               picture: '/speakers/kordys.webp',
               bio: 'Polský občan omilostněný prezidentem Zemanem v kauze ayahuasky, odsouzený na 8,5 roku vězení.'
-            },
-            {
-              name: 'Vojtěch Třísko',
-              picture: '/speakers/trisko.jpg',
-              bio: 'Odborník na problematiku obětí represivní drogové politiky.'
             }
+            
           ],
           moderator: {
-            name: 'TBA',
-            picture: '/speakers/tba.jpg',
-            bio: 'Moderátor bude oznámen.'
+            name: 'Vojtěch Třísko',
+            picture: '/speakers/trisko.jpg',
+            bio: 'Odborník na problematiku obětí represivní drogové politiky.'
           }
         },
         {

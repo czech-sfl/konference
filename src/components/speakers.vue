@@ -127,6 +127,12 @@ export default {
           organization: 'Institut liberálních studií',
           description: 'Martin Pánek je ředitelem Institutu liberálních studií, nejstaršího českého think-tanku se sídlem v Praze. Šest let působil v Evropském parlamentu jako asistent českých a britských europoslanců, kde prosazoval volný obchod, decentralizaci, otevřené hranice a libertariánské myšlenky obecně.'
         },
+        {
+          name: 'Vojtěch Třísko',
+          photo: '/speakers/trisko.jpg',
+          organization: '',
+          description: 'Odborník na problematiku obětí represivní drogové politiky.'
+        },
         // TODO: Další řečníci budou doplněni
         // {
         //   name: 'Jindřich Vobořil',
